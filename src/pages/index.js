@@ -42,11 +42,12 @@ const IndexPage = () => (
     <h1>Coders & Yogis Who Travel</h1>
     <h2>Consulting Firm of Nomads</h2>
     {nomadBio.map(code => <h5>{code}</h5>)}
+    <br />
     <h1>Nomads</h1>
     {Object.values(nomads).map((obj, i, a) => (
       <div>
         <Nomad {...obj} />
-        {(i + 1 < a.length) ? <br /> : null}
+        <br />
       </div>
     ))}
     <h1>Contact</h1>
