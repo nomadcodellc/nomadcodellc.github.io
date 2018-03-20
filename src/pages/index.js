@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Image from '../components/Image';
+import Nomad from '../components/Nomad';
 import { brendan, tom } from '../images';
 
 const nomadBio = [
@@ -22,16 +22,18 @@ const tomBio = [
 
 const nomads = {
   brendan: {
-    image: brendan,
-    name: "Brendan O'Brien",
     current: "Yoga Instructor at El Zopilote",
     descriptions: brendanBio,
+    image: brendan,
+    link: "https://brendobrien.github.io/",
+    name: "Brendan O'Brien",
   },
   tom: {
-    image: tom,
-    name: "Tom Mayell",
     current: "Yoga Instructor at El Zopilote",
     descriptions: tomBio,
+    image: tom,
+    link: "https://hitchhikeadelic.com",
+    name: "Tom Mayell",
   }
 }
 
@@ -43,10 +45,12 @@ const IndexPage = () => (
     <h1>Nomads</h1>
     {Object.values(nomads).map((obj, i, a) => (
       <div>
-        <Image {...obj} />
+        <Nomad {...obj} />
         {(i + 1 < a.length) ? <br /> : null}
       </div>
     ))}
+    <h1>Contact</h1>
+    <h2>nomadcodellc@gmail.com</h2>
   </div>
 )
 
