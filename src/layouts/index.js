@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import { favicon } from '../images';
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -13,7 +14,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    >
+      <link rel='shortcut icon' type='image/x-icon' href={favicon} />
+    </Helmet>
     <Header />
     <div
       style={{

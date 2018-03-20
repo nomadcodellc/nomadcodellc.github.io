@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Image = ({ image, name, description }) => { console.log(name); return (
+const Image = ({ image, name, current, descriptions }) => { console.log(name); return (
   <div>
     <div
       style={{
@@ -10,7 +10,8 @@ const Image = ({ image, name, description }) => { console.log(name); return (
       <img src={image} />
     </div>
     <h2>{name}</h2>
-    <h5>{description}</h5>
+    <h4>{`Currently: ${current}`}</h4>
+    {descriptions.map(descr => <h5>{descr}</h5>)}
   </div>
 )};
 
