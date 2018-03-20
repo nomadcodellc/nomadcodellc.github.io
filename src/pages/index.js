@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Image from '../components/Image';
+import { brendan, tom } from '../images';
 
 const IndexPage = () => (
   <div>
-    <div>
-      <img src={require('../images/linkedin.jpg')} />
-    </div>
+    {[brendan, tom].map(source => <Image source={source} />)}
     <div>
       <Link to="/page-2/">Go to page 2</Link>
     </div>
