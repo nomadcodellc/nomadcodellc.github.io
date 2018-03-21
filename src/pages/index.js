@@ -32,7 +32,6 @@ const nomads = {
     current: "Yoga Instructor at El Zopilote",
     descriptions: tomBio,
     image: tom,
-    link: "https://hitchhikeadelic.com",
     name: "Tom Mayell",
   }
 }
@@ -50,6 +49,7 @@ const IndexPage = () => (
         <br />
       </div>
     ))}
+    <br />
     <h1>Contact</h1>
     <h2>nomadcodellc@gmail.com</h2>
   </div>
