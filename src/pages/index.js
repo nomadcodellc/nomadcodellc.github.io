@@ -13,23 +13,26 @@ const brendanBio = [
   "A nomadic yogi who codes", 
   "iOS/Android/Web Applications with React & Node", 
   "Ashtanga Vinyasa & Yin Yoga",
+  "Previously: Co-Founder & VP of Engineering at Brainbuild.io",
+  "Previously: Yoga Instructor at El Zopilote",
 ];
 const tomBio = [
   "Travel the world on a shoestring budget",
   "Web Development/Design with HTML/CSS/JS",
   "Ashtanga Vinyasa & Yin Yoga",
+  "Previously: Yoga Instructor at El Zopilote",
 ];
 
 const nomads = {
   brendan: {
-    current: "Yoga Instructor at El Zopilote",
+    current: "Available",
     descriptions: brendanBio,
     image: brendan,
     link: "https://brendobrien.github.io/",
     name: "Brendan O'Brien",
   },
   tom: {
-    current: "Yoga Instructor at El Zopilote",
+    current: "Available",
     descriptions: tomBio,
     image: tom,
     name: "Tom Mayell",
