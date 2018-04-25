@@ -16,7 +16,7 @@ const brendanBio = [
 ];
 const tomBio = [
   "Travel the world on a shoestring budget",
-  "Always looking for adventure.",
+  "Web Development/Design with HTML/CSS/JS",
   "Ashtanga Vinyasa & Yin Yoga",
 ];
 
